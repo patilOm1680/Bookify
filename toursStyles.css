@@ -1,0 +1,125 @@
+.statusCard {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px 0 rgba(160, 158, 158, 0.2), 0 6px 20px 0 rgba(102, 99, 99, 0.19);
+}
+
+.totalIncomeCard {
+    background-color: rgba(0, 56, 57, 1);
+    color: rgba(144, 253, 255, 1);
+}
+
+.statsbox {
+    background-color: rgba(244, 246, 248, 1);
+}
+
+.progressBar {
+    height: 8px;
+}
+
+.toursAvailable {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.reviewbtn {
+    background-color: rgba(145, 158, 171, 0.08);
+}
+
+.rejectBtn {
+    background-color: rgba(255, 86, 48, 0.08);
+}
+
+.rejectBtn:hover {
+    background-color: rgb(224, 222, 222);
+}
+
+.reviewHr {
+    border: 1px dashed rgb(175, 173, 173);
+}
+
+.justifyText {
+    text-align: justify;
+}
+
+.card {
+    background-color: rgba(244, 246, 248, 1);
+    transition: all 0.9s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* .card:hover #newBookingContainer{
+    overflow: visible;
+    
+} */
+/* .newBookingContainer{
+    transition: overflow 2s ease;
+} */
+.newBookingContainer:hover {
+    overflow: visible;
+}
+
+.cardText {
+    color: rgba(99, 115, 129, 1);
+}
+
+.selectOfGraph {
+    border: 1px solid rgb(223, 222, 222);
+}
+
+.cardTiming {
+    color: rgba(145, 158, 171, 1);
+}
+
+.tableText {
+    color: rgba(99, 115, 129, 1);
+}
+
+#heading th {
+    color: rgba(99, 115, 129, 1);
+    background-color: rgba(244, 246, 248, 1);
+}
+
+.statsCount {
+    background-color: white;
+}
+
+.StatsInnerbox {
+    background-color: white;
+}
+
+.barGraph {
+    box-shadow: 0 4px 8px 0 rgba(163, 162, 162, 0.2), 0 6px 20px 0 rgba(160, 158, 158, 0.19);
+}
+
+.navText {
+    color: rgba(99, 115, 129, 1);
+}
+
+.navbarLeft {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#navBooking {
+    color: rgba(0, 138, 140, 1);
+}
+
+#bookingList {
+    background-color: rgba(0, 138, 140, 0.08);
+}
+
+.leftNavList li:hover {
+
+    background-color: rgba(0, 138, 140, 0.08);
+
+}
+
+
+.bookingDetailsdiv {
+    box-shadow: 0 4px 8px 0 rgba(163, 162, 162, 0.2), 0 6px 20px 0 rgba(160, 158, 158, 0.19);
+}
+
+.bookingCardBadge {
+    background-color: rgba(28, 37, 46, 1);
+}

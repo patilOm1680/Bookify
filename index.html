@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify</title>
+    <link rel="shortcut icon" href="./assets/Icons/Navbar/mLogo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="toursStyles.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid mt-4 min-vh-100">
+
+
+        <div class="d-flex d-lg-none justify-content-between">
+
+
+            <!-- <div class="d-flex align-items-center">
+                <img class="rounded-5 border border-success" src="./assets/Images/ReviewDp.png" alt="user">
+            </div> -->
+
+            <div class="ms-3">
+                <img src="./assets/Icons/Navbar/mLogo.png" alt="m logo">
+            </div>
+
+            <button class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i
+                    class="fas fa-bars"></i></button>
+
+        </div>
+
+        <div class="row">
+            <!-- left navbar section  -->
+
+            <div class="col-lg-2 ">
+
+
+                <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header position-fixed top-0 end-0">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbarLeft w-100 h-100 ps-0 ps-sm-3">
+
+                            <div class="ms-3">
+                                <img src="./assets/Icons/Navbar/mLogo.png" alt="m logo">
+                            </div>
+
+                            <div>
+                                <ul class="leftNavList navbar-nav">
+                                    <div class="nav-item p-2">
+                                        <p class="navText m-0 p-0">Overview</p>
+                                    </div>
+                                    <li class="nav-item p-2 d-flex">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/appIcon.png" alt="app icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">App</p>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/ecommarceIcon.png" alt="ecommerce icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">E-commerce</p>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/analyticsIcon.png" alt="analytics icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">Analytics</p>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/BankingIcon.png" alt="banking icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">Banking</p>
+                                    </li>
+                                    <li id="bookingList" class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/BookingIcon.png" alt="booking icon">
+                                        </div>
+                                        <p id="navBooking" class="m-0 pt-1 fw-bold">Booking</p>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/fileIcon.png" alt="file icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">File</p>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/courseIcon.png" alt="course icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">Course</p>
+                                    </li>
+                                    <div class="nav-item p-2 d-flex align-items-center">
+
+                                        <p class="navText m-0 pt-1">MANAGEMENT</p>
+                                    </div>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/userIcon.png" alt="user icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">User</p>
+
+                                        </div>
+
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/rightArrowNav.png" alt="right arrow">
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/productIcon.png" alt="product icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">Product</p>
+
+                                        </div>
+
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/rightArrowNav.png" alt="right arrow">
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/orderIcon.png" alt="order icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">Order</p>
+
+                                        </div>
+
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/rightArrowNav.png" alt="right arrow">
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/invoiceIcon.png" alt="invoice icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">Invoice</p>
+
+                                        </div>
+
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/rightArrowNav.png" alt="right arrow">
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/blogIcon.png" alt="blog icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">Blog</p>
+
+                                        </div>
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/rightArrowNav.png" alt="right arrow">
+                                        </div>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/tourIcon.png" alt="tour icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">Tour</p>
+
+                                        </div>
+
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/rightArrowNav.png" alt="right arrow">
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/fileManagerIcon.png" alt="blog icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">File manager</p>
+
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="./assets/Icons/Navbar/mailIcon.png" alt="mail icon">
+                                            </div>
+                                            <p class="navText m-0 pt-1">Mail</p>
+
+                                        </div>
+
+                                        <div>
+                                            <span class="badge bg-danger-subtle text-danger">32+</span>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/chatIcon.png" alt="chat icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">Chat</p>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/calenderIcon.png" alt="calender icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">Calender</p>
+                                    </li>
+                                    <li class="nav-item p-2 d-flex align-items-center mb-3">
+                                        <div>
+                                            <img src="./assets/Icons/Navbar/kanbanIcon.png" alt="kanban icon">
+                                        </div>
+                                        <p class="navText m-0 pt-1">Kanban</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right main section  -->
+            <div class="col-12 col-lg-10 py-0 px-4 px-md-3 px-lg-5 px-2">
+
+                <!-- navbar top  -->
+
+
+                <div class="d-none d-lg-block sticky-top top-0 bg-white py-2 px-3 rounded-3 shadow-sm">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="d-flex align-items-center h-75">
+                                <img class="h-75" src="./assets/Icons/Navbar/logoTeams.png" alt="Teams logo">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <h5 class="m-0 p-0">Bookify</h5>
+                                <span class="badge bg-secondary-subtle text-black py-1">Free</span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-4 h-auto align-items-center">
+                            <div class="d-flex align-items-center bg-secondary-subtle px-2 h-50 rounded-3 py-3">
+                                <i class="fas fa-search fa-lg"></i>
+                            </div>
+                            <div class=" overflow-hidden d-flex align-items-center">
+                                <img class="rounded-1" src="./assets/Icons/Navbar/Flag.png" alt="India flag">
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-bell fa-lg"></i>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-gear fa-lg"></i>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-5 border border-success" src="./assets/Images/ReviewDp.png"
+                                    alt="user">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- booking- first section  -->
+
+                <div class="row g-3 mt-0">
+                    <div class="col-12 col-md-4">
+                        <div class="statusCard d-flex align-items-center justify-content-between py-3 px-4 h-100 rounded-3">
+                            <div>
+                                <p>Total Bookings</p>
+                                <h3 class="fw-bold">8.2K</h3>
+
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="./assets/Icons/ic-solar_double-alt-arrow-up-bold-duotone.png"
+                                        alt="booking Icon">
+                                    <div>8.2%</div>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <!-- imgae div  -->
+                                <img class="img-fluid" src="./assets/Icons/ic-total.png" alt="booking icon">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="statusCard d-flex align-items-center justify-content-between py-3 px-4 h-100 rounded-3">
+                            <div>
+                                <p>Sold</p>
+                                <h3 class="fw-bold">86.6K</h3>
+
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="./assets/Icons/ic-solar_double-alt-arrow-down-bold-duotone.png"
+                                        alt="booking Icon">
+                                    <div>86.6%</div>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <!-- imgae div  -->
+                                <img class="img-fluid" src="./assets/Icons/stack.png" alt="booking icon">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="statusCard d-flex align-items-center justify-content-between py-3 px-4 h-100 rounded-3">
+                            <div>
+                                <p>Cancelled</p>
+                                <h3 class="fw-bold">73.9K</h3>
+
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="./assets/Icons/ic-solar_double-alt-arrow-up-bold-duotone.png"
+                                        alt="booking Icon">
+                                    <div>73.9%</div>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <!-- imgae div  -->
+                                <img class="img-fluid" src="./assets/Icons/stack2.png" alt="booking icon">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- stats- second section  -->
+                <div class="row mt-0 gx-3 gy-3">
+                    <div class="col-12 col-md-8">
+
+                        <div class="row g-2">
+
+                            <div class="statsbox rounded-4 px-2 py-2">
+
+                                <div class="col-12">
+                                    <!-- <div class="bg-secondary p-4">Total incomes</div> -->
+
+
+                                    <div class="row g-2">
+                                        <div class="col-12">
+                                            <div class="StatsInnerbox p-2 rounded-4">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="totalIncomeCard px-3 py-4 rounded-4">
+                                                            <div
+                                                                class="d-flex justify-content-between align-content-center ">
+                                                                <div class="div">
+                                                                    <p>Total incomes</p>
+                                                                    <h3>$9,990</h3>
+                                                                </div>
+                                                                <div class="div">
+                                                                    <img src="./assets/Icons/stack copy.png" alt="icon">
+                                                                    <p>last week</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <img class="w-100 img-fluid" src="./assets/Images/Line.png"
+                                                                alt="line img">
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6 h-100">
+                                                        <!-- booked  -->
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center gap-2 px-4 py-3 h-100 mt- mt-sm-0">
+                                                            <h4 class="fw-semibold">Booked</h4>
+                                                            <div>
+                                                                <div
+                                                                    class="d-flex justify-content-between mt-3 fs-6  mb-1 fw-bold">
+                                                                    <p class="m-0 p-0">PENDING</p>
+                                                                    <P class="m-0 p-0">86.6k</P>
+                                                                </div>
+                                                                <div class="progressBar progress">
+                                                                    <div class="progress-bar bg-warning"
+                                                                        role="progressbar" style="width: 90%"
+                                                                        aria-valuenow="95" aria-valuemin="0"
+                                                                        aria-valuemax="100"></div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div>
+                                                                <div
+                                                                    class="d-flex justify-content-between mt-4 fs-6 mb-1 fw-bold">
+                                                                    <p class="m-0 p-0">CANCELLED</p>
+                                                                    <P class="m-0 p-0">8.2k</P>
+                                                                </div>
+                                                                <div class="progressBar progress">
+                                                                    <div class="progress-bar bg-danger"
+                                                                        role="progressbar" style="width: 20%"
+                                                                        aria-valuenow="95" aria-valuemin="0"
+                                                                        aria-valuemax="100"></div>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <div>
+                                                                <div
+                                                                    class="d-flex justify-content-between mt-4 fs-6 mb-1 fw-bold">
+                                                                    <p class="m-0 p-0 ">SOLD</p>
+                                                                    <P class="m-0 p-0">79k</P>
+                                                                </div>
+                                                                <div class="progressBar progress">
+                                                                    <div class="progress-bar bg-success"
+                                                                        role="progressbar" style="width: 45%"
+                                                                        aria-valuenow="95" aria-valuemin="0"
+                                                                        aria-valuemax="100"></div>
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <!-- 8.2 %  -->
+                                            <div
+                                                class="statsCount d-flex justify-content-center align-content-center gap-3 px-3 py-4 rounded-4">
+                                                <div>
+                                                    <img src="./assets/Images/Sparkline.png" alt="sparkline">
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-content-center mt-3 ">
+                                                    <h5 class="fw-bold">9,990</h5>
+                                                    <p>Sold</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <!-- 86.6  -->
+                                            <div
+                                                class="statsCount d-flex justify-content-center align-content-center gap-3 px-3 py-4 rounded-4">
+                                                <div>
+                                                    <img src="./assets/Images/Sparkline2.png">
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-content-center mt-3 ">
+                                                    <h5 class="fw-bold">10,989</h5>
+                                                    <p>Pending for payment</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            <div class="row g-2">
+                                <div class="col">
+                                    <!-- bar graph chart  -->
+                                    <div
+                                        class="barGraph d-flex flex-column justify-content-center gap-3 mt-3 px-4 py-3 rounded-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="fw-semibold">Statistics</h4>
+                                            <select class="selectOfGraph h-25 px-1 py-0  rounded-1 bg-white">
+                                                <option selected>Yearly</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="d-flex gap-4">
+                                            <div class="d-flex flex-column gap-2 ">
+                                                <div class="d-flex gap-2  align-items-center">
+                                                    <div>
+                                                        <img src="./assets/Icons/dot1sold.png" alt="sold">
+                                                    </div>
+                                                    <h6 class="m-0 p-0">Sold</h6>
+                                                </div>
+
+                                                <h5>8.2k</h5>
+
+                                            </div>
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div>
+                                                        <img src="./assets/Icons/dot2cancelled.png" alt="cancelled">
+                                                    </div>
+                                                    <h6 class="m-0 p-0">Cancelled</h6>
+                                                </div>
+
+                                                <h5>86.6k</h5>
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div class="w-100">
+                                            <img class="w-100" src="./assets/Images/Graph.png"
+                                                alt="stats graph">
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <!-- Tours available  -->
+                        <div
+                            class="toursAvailable d-flex flex-column justify-content-center px-4 py-4 rounded-4 shadow gap-4">
+                            <h4 class="fw-semibold mb-md-5">Tours available</h4>
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img class="img-fluid" src="./assets/Images/Tours.png" alt="Tours img">
+                            </div>
+
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex gap-2">
+                                        <div>
+                                            <img src="./assets/Images/soldOuticon.png" alt="sold out">
+                                        </div>
+
+                                        <p class="fw-light">Sold out</p>
+                                    </div>
+                                    <p class="fw-bold">120 Tours</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex gap-2">
+                                        <div>
+                                            <img src="./assets/Icons/availableIcon.png" alt="available tours">
+                                        </div>
+
+                                        <p class="fw-light">Available</p>
+                                    </div>
+                                    <p class="fw-bold">66 Tours</p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- customer reviews section  -->
+                        <div class="row">
+                            <div class="col">
+
+                                <!-- <div class="mainDiv mt-4 rounded-4 shadow">
+
+                                    <div class="p-4 pb-1 d-flex flex-column gap-3">
+                                        <div>
+                                            <div class="d-flex justify-content-between">
+                                                <h4>Customer reviews</h4>
+                                                <div class="d-flex">
+                                                    <div role="button">
+                                                        <img src="./assets/Icons/reviewIconLeft.png" alt="">
+                                                    </div>
+                                                    <div role="button">
+                                                        <img src="./assets/Icons/reviewIconRight.png" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <h6 class="fw-light">12 Reviews</h6>
+
+                                        </div>
+
+                                        <div class="d-flex gap-3">
+                                            <div>
+                                                <img src="./assets/Images/ReviewDp.png" alt="Dp">
+                                            </div>
+                                            <div>
+                                                <h5>Jayvion Simon</h5>
+                                                <h6 class="fw-light">12 Aug 2022 10:00 PM</h6>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <img src="./assets/Images/Rating.png" alt="rating png">
+                                        </div>
+
+                                        <div>
+                                            <p class="justifyText">
+                                                The sun slowly set over the horizon, painting the sky in vibrant hues of
+                                                orange and pink. A gentle breeze rustled through the nearby trees.
+                                            </p>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="reviewbtn py-2 text-center rounded-4">
+                                                    Great Service
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="reviewbtn py-2 text-center rounded-4">
+                                                    Recommended
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="reviewbtn py-2 text-center rounded-4">
+                                                    Best Price
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+
+
+                                    <hr class="reviewHr ">
+
+                                    <div class="p-4 pt-1">
+                                        <div class="d-flex gap-3">
+                                            <button type="button"
+                                                class="rejectBtn btn px-3  fw-bold fs-6 text-danger rounded-3 w-50">Reject</button>
+
+                                            <button type="button"
+                                                class="btn btn-dark px-3  fw-bold fs-6 rounded-3 w-50">Accept</button>
+                                        </div>
+                                    </div>
+
+
+                                </div> -->
+
+                                <div class="mainDiv mt-4 rounded-4 shadow">
+
+                                    <div id="customerReviewCarousel" class="carousel slide" data-bs-ride="carousel"
+                                        data-bs-interval="3000">
+                                        <div class="carousel-inner">
+
+
+                                            <!-- first review  -->
+                                            <div class="carousel-item active">
+                                                <div class="p-4 pb-1 d-flex flex-column gap-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <h4>Customer reviews</h4>
+                                                            <h6 class="fw-light">12 Reviews</h6>
+                                                        </div>
+
+                                                        <div class="d-flex">
+                                                            <button class="btn p-0 border-0 bg-transparent"
+                                                                type="button" data-bs-target="#customerReviewCarousel"
+                                                                data-bs-slide="prev">
+                                                                <img src="./assets/Icons/reviewIconLeft.png" alt="Left">
+                                                            </button>
+                                                            <button class="btn p-0 border-0 bg-transparent"
+                                                                type="button" data-bs-target="#customerReviewCarousel"
+                                                                data-bs-slide="next">
+                                                                <img src="./assets/Icons/reviewIconRight.png"
+                                                                    alt="Right">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column gap-2">
+                                                        <div class="d-flex gap-3">
+                                                            <div><img src="./assets/Images/ReviewDp.png" alt="Dp"></div>
+                                                            <div>
+                                                                <h5>Jayvion Simon</h5>
+                                                                <h6 class="fw-light">12 Aug 2022 10:00 PM</h6>
+                                                            </div>
+                                                        </div>
+
+                                                        <div><img src="./assets/Images/Rating.png" alt="rating png">
+                                                        </div>
+                                                    </div>
+
+
+                                                    <p class="justifyText">The sun slowly set over the horizon, painting
+                                                        the sky in vibrant
+                                                        hues of orange and pink. The sun slowly set over the horizon.
+                                                    </p>
+                                                    <div class="d-none d-xl-flex justify-content-between gap-2">
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Great Service
+                                                        </div>
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Recommended
+                                                        </div>
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Best Price
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- second review  -->
+                                            <div class="carousel-item">
+                                                <div class="p-4 pb-1 d-flex flex-column gap-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <h4>Customer reviews</h4>
+                                                            <h6 class="fw-light">12 Reviews</h6>
+                                                        </div>
+
+                                                        <div class="d-flex">
+                                                            <button class="btn p-0 border-0 bg-transparent"
+                                                                type="button" data-bs-target="#customerReviewCarousel"
+                                                                data-bs-slide="prev">
+                                                                <img src="./assets/Icons/reviewIconLeft.png" alt="Left">
+                                                            </button>
+                                                            <button class="btn p-0 border-0 bg-transparent"
+                                                                type="button" data-bs-target="#customerReviewCarousel"
+                                                                data-bs-slide="next">
+                                                                <img src="./assets/Icons/reviewIconRight.png"
+                                                                    alt="Right">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column gap-2">
+                                                        <div class="d-flex gap-3">
+                                                            <div><img src="./assets/Images/lucianDp.png" alt="Dp"></div>
+                                                            <div>
+                                                                <h5>Lucian Obrein</h5>
+                                                                <h6 class="fw-light">11 Aug 2022 09:00 PM</h6>
+                                                            </div>
+                                                        </div>
+
+                                                        <div><img src="./assets/Images/Rating.png" alt="rating png">
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="justifyText">Had an amazing experience, the staff was very
+                                                        friendly and
+                                                        helpful. Had an amazing experience, the staff was very friendly
+                                                        and
+                                                        helpful.
+                                                    </p>
+                                                    <div class="d-none d-xl-flex justify-content-between gap-2">
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Great Service
+                                                        </div>
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Recommended
+                                                        </div>
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Best Price
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <!-- third review  -->
+                                            <div class="carousel-item">
+                                                <div class="p-4 pb-1 d-flex flex-column gap-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <h4>Customer reviews</h4>
+                                                            <h6 class="fw-light">12 Reviews</h6>
+                                                        </div>
+
+                                                        <div class="d-flex">
+                                                            <button class="btn p-0 border-0 bg-transparent"
+                                                                type="button" data-bs-target="#customerReviewCarousel"
+                                                                data-bs-slide="prev">
+                                                                <img src="./assets/Icons/reviewIconLeft.png" alt="Left">
+                                                            </button>
+                                                            <button class="btn p-0 border-0 bg-transparent"
+                                                                type="button" data-bs-target="#customerReviewCarousel"
+                                                                data-bs-slide="next">
+                                                                <img src="./assets/Icons/reviewIconRight.png"
+                                                                    alt="Right">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column gap-2">
+                                                        <div class="d-flex gap-3">
+                                                            <div><img src="./assets/Images/dejaDp.png" alt="Dp"></div>
+                                                            <div>
+                                                                <h5>Deja Brady</h5>
+                                                                <h6 class="fw-light">10 Aug 2022 08:00 PM</h6>
+                                                            </div>
+
+                                                        </div>
+                                                        <div><img src="./assets/Images/Rating.png" alt="rating png">
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <p class="justifyText">Everything was well organized and the tour
+                                                        exceeded expectations!
+                                                        Everything was well organized and the tour exceeded
+                                                        expectations!
+                                                    </p>
+                                                    <div class="d-none d-xl-flex justify-content-between gap-2">
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Great Service
+                                                        </div>
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Recommended
+                                                        </div>
+
+                                                        <div
+                                                            class="reviewbtn rounded-3 py-1 py-sm-sm-2 px-sm-3 px-2 d-flex justify-content-center align-items-center">
+                                                            Best Price
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <hr class="reviewHr">
+                                    <div class="p-4 pt-1">
+                                        <div class="d-flex gap-3">
+                                            <button type="button"
+                                                class="rejectBtn btn px-3 fw-bold fs-6 text-danger rounded-3 w-50">Reject</button>
+                                            <button type="button"
+                                                class="btn btn-dark px-3 fw-bold fs-6 rounded-3 w-50">Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- New bookings section  -->
+                <div class="row mt-4">
+                    <div class="col">
+
+                        <!-- without carousel  -->
+                        <!-- <div class="newBookingsDiv d-flex flex-column justify-content-between px-2 py-3 gap-3">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4>Newest Booking</h4>
+                                    <h6 class="fw-light">12 bookings</h6>
+                                </div>
+                                <div class="d-flex justify-content-center align-content-center">
+                                    <div class="d-flex justify-content-center align-content-center h-75">
+                                        <img src="./assets/Icons/reviewIconLeft.png" alt="">
+                                    </div>
+                                    <div class="d-flex justify-content-center align-content-center h-75">
+                                        <img src="./assets/Icons/reviewIconRight.png" alt="">
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="row gy-md-0 gy-3">
+                                    <div class="col-12 col-md-3">
+                                        <div
+                                            class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                            <svg class="position-absolute end-0 top-3 me-4"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                            <div class="d-flex gap-3">
+                                                <div>
+                                                    <img src="./assets/Images/ReviewDp.png" alt="Dp">
+                                                </div>
+                                                <div>
+                                                    <h5>Jayvion Simon</h5>
+                                                    <h6 class="cardTiming ">12 Aug 2022 10:00 PM</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">3 days 2 nights</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/guestIcon.png" alt="guest icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">5 guests</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="rounded-4 w-100 h-100 overflow-hidden">
+                                                <img class="w-100 h-auto " src="./assets/Images/simonTravelImg.png"
+                                                    alt="simon Travel">
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3">
+                                        <div
+                                            class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                            <svg class="position-absolute end-0 top-3 me-4"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                            <div class="d-flex gap-3">
+                                                <div>
+                                                    <img src="./assets/Images/lucianDp.png" alt="Dp">
+                                                </div>
+                                                <div>
+                                                    <h5>Lucian Obrein</h5>
+                                                    <h6 class="cardTiming ">11 Aug 2022 09:00 PM</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">3 days 2 nights</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/guestIcon.png" alt="guest icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">3 Person</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="rounded-4 w-100 h-100 overflow-hidden">
+                                                <img class="w-100 h-auto " src="./assets/Images/lucianTravelImg.png"
+                                                    alt="simon Travel">
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3">
+                                        <div
+                                            class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                            <svg class="position-absolute end-0 top-3 me-4"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                            <div class="d-flex gap-3">
+                                                <div>
+                                                    <img src="./assets/Images/dejaDp.png" alt="Dp">
+                                                </div>
+                                                <div>
+                                                    <h5>Deja Brady</h5>
+                                                    <h6 class="cardTiming ">10 Aug 2022 08:00 PM</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">3 days 2 nights</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/guestIcon.png" alt="guest icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">1 Person</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="rounded-4 w-100 h-100 overflow-hidden">
+                                                <img class="w-100 h-auto " src="./assets/Images/dejaTravelImg.png"
+                                                    alt="deja Travel">
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3">
+                                        <div
+                                            class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                            <svg class="position-absolute end-0 top-3 me-4"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                            <div class="d-flex gap-3">
+                                                <div>
+                                                    <img src="./assets/Images/harrisonDp.png" alt="Dp">
+                                                </div>
+                                                <div>
+                                                    <h5>Harrison Stein</h5>
+                                                    <h6 class="cardTiming ">09 Aug 2022 07:00 PM</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">3 days 2 nights</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <img src="./assets/Icons/guestIcon.png" alt="guest icon">
+                                                    </div>
+                                                    <div>
+                                                        <p class="cardText m-0 p-0">5 guests</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="rounded-4 w-100 h-100 overflow-hidden">
+                                                <img class="w-100 h-auto " src="./assets/Images/harrisonTravelImg.png"
+                                                    alt="simon Travel">
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div> -->
+
+
+
+                        <!-- with carousel  -->
+
+                        <div class="newBookingsDiv d-flex flex-column justify-content-between px-2 py-3 gap-3">
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4 class="fw-semibold">Newest Booking</h4>
+                                    <h6 class="fw-light">12 bookings</h6>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="btn p-0 border-0 bg-transparent" type="button"
+                                        data-bs-target="#newestBookingCarousel" data-bs-slide="prev">
+                                        <img src="./assets/Icons/reviewIconLeft.png" alt="Prev">
+                                    </button>
+
+                                    <button class="btn p-0 border-0 bg-transparent" type="button"
+                                        data-bs-target="#newestBookingCarousel" data-bs-slide="next">
+                                        <img src="./assets/Icons/reviewIconRight.png" alt="Next">
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div id="newestBookingCarousel" class="carousel slide" data-bs-ride="false">
+                                <div class="newBookingContainer carousel-inner">
+
+                                    <!-- first 4 cards  -->
+                                    <div class="carousel-item active">
+                                        <div class="row gy-3 gy-md-0">
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                                    <svg class="position-absolute end-0 top-3 me-4"
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                                    </svg>
+                                                    <div class="d-flex gap-3">
+                                                        <div><img src="./assets/Images/ReviewDp.png" alt="Dp"></div>
+
+
+                                                        <div>
+                                                            <h5>Jayvion Simon</h5>
+                                                            <h6 class="cardTiming ">12 Aug 2022 10:00 PM</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+
+
+
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/simonTravelImg.png"
+                                                            alt="simon Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                                    <div class="d-flex gap-3">
+                                                        <div><img src="./assets/Images/lucianDp.png" alt="Dp"></div>
+                                                        <div>
+                                                            <h5>Lucian Obrein</h5>
+                                                            <h6 class="cardTiming">11 Aug 2022 09:00 PM</h6>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+
+
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/lucianTravelImg.png"
+                                                            alt="lucian Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative mt-md-3 mt-xl-0">
+                                                    <div class="d-flex gap-3">
+
+
+
+                                                        <div><img src="./assets/Images/dejaDp.png" alt="Dp"></div>
+                                                        <div>
+                                                            <h5>Deja Brady</h5>
+                                                            <h6 class="cardTiming">10 Aug 2022 08:00 PM</h6>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+
+
+
+
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/dejaTravelImg.png"
+                                                            alt="deja Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative mt-md-3 mt-xl-0">
+                                                    <div class="d-flex gap-3">
+                                                        <div><img src="./assets/Images/harrisonDp.png" alt="Dp"></div>
+                                                        <div>
+                                                            <h5>Harrison Stein</h5>
+                                                            <h6 class="cardTiming">09 Aug 2022 07:00 PM</h6>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/harrisonTravelImg.png"
+                                                            alt="harrison Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- second cards  -->
+                                    <div class="carousel-item">
+                                        <div class="row gy-3 gy-md-0">
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                                    <svg class="position-absolute end-0 top-3 me-4"
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                                    </svg>
+                                                    <div class="d-flex gap-3">
+                                                        <div><img src="./assets/Images/ReviewDp.png" alt="Dp"></div>
+                                                        <div>
+                                                            <h5>Jayvion Simon</h5>
+                                                            <h6 class="cardTiming ">12 Aug 2022 10:00 PM</h6>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/simonTravelImg.png"
+                                                            alt="simon Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative">
+                                                    <div class="d-flex gap-3">
+                                                        <div><img src="./assets/Images/lucianDp.png" alt="Dp"></div>
+                                                        <div>
+                                                            <h5>Lucian Obrein</h5>
+                                                            <h6 class="cardTiming">11 Aug 2022 09:00 PM</h6>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/lucianTravelImg.png"
+                                                            alt="lucian Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative mt-md-3 mt-xl-0">
+                                                    <div class="d-flex gap-3">
+                                                        <div><img src="./assets/Images/dejaDp.png" alt="Dp"></div>
+
+
+                                                        <div>
+                                                            <h5>Deja Brady</h5>
+                                                            <h6 class="cardTiming">10 Aug 2022 08:00 PM</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+
+
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/dejaTravelImg.png"
+                                                            alt="deja Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-xl-3">
+                                                <div
+                                                    class="card p-3 pt-4 border-0 rounded-4 d-flex flex-column gap-3 position-relative mt-md-3 mt-xl-0">
+                                                    <div class="d-flex gap-3">
+                                                        <div><img src="./assets/Images/harrisonDp.png" alt="Dp"></div>
+                                                        <div>
+                                                            <h5>Harrison Stein</h5>
+                                                            <h6 class="cardTiming">09 Aug 2022 07:00 PM</h6>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./assets/Icons/dateIcon.png" alt="date">
+                                                        <p class="cardText m-0">3 days 2 nights</p>
+                                                    </div>
+                                                    <div class="rounded-4 overflow-hidden position-relative">
+                                                        <img class="w-100" src="./assets/Images/harrisonTravelImg.png"
+                                                            alt="harrison Travel">
+                                                        <span
+                                                            class="bookingCardBadge badge position-absolute px-2 bottom-0 end-0 mb-3 me-3 fw-bold fs-5 rounded-3">$16.19</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Booking details section  -->
+                <div class="row mt-3 mb-5">
+                    <div class="col">
+                        <div class="bookingDetailsdiv d-flex flex-column rounded-4 ">
+
+                            <!-- heading  -->
+                            <div class="ms-3 mt-3">
+                                <h4 class="fw-semibold">Booking Details</h4>
+                            </div>
+
+                            <!-- table  -->
+                            <div class="mt-3 table-responsive">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr id="heading">
+                                            <th class="py-3 px-3">Destination</th>
+                                            <th class="py-3">Customer</th>
+                                            <th class="py-3">Check in</th>
+                                            <th class="py-3">Check out</th>
+                                            <th class="py-3" colspan="2">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="ms-2">
+                                                        <img src="./assets/Images/Booking_details_Images/majesticMountain.png"
+                                                            alt="majestic mountain">
+                                                    </div>
+                                                    <p class="m-0 p-0">Majestic Mountain Adventures</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">Jayvion Simon</p>
+                                                    <h6 class="tableText mt-1 p-0">365-374-4961</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">12 Jan 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">10:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">11 Feb 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">9:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <span class="bg-success-subtle px-2 py-1 mt-2 rounded-2">Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="mt-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-three-dots-vertical"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                                    </svg>
+
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="ms-2">
+                                                        <img src="./assets/Images/Booking_details_Images/iland.png"
+                                                            alt="island">
+                                                    </div>
+                                                    <p class="m-0 p-0">Island Hopping Extravaganza</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">Lucian Obrien</p>
+                                                    <h6 class="tableText mt-1 p-0">904-966-2836</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">10 Sep 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">8:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">09 Aug 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">7:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <span
+                                                        class="bg-warning-subtle px-2 py-1 mt-2 rounded-2">Pending</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="mt-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-three-dots-vertical"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                                    </svg>
+
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="ms-2">
+                                                        <img src="./assets/Images/Booking_details_Images/europImg.png"
+                                                            alt="cultural wonder">
+                                                    </div>
+                                                    <p class="m-0 p-0">Cultural Wonders of Europe</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">Deja Brady</p>
+                                                    <h6 class="tableText mt-1 p-0">399-757-9909</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">08 Apr 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">6:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">07 Aug 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">5:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <span
+                                                        class="bg-danger-subtle px-2 py-1 mt-2 rounded-2">Cancelled</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="mt-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-three-dots-vertical"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                                    </svg>
+
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="ms-2">
+                                                        <img src="./assets/Images/Booking_details_Images/AfricaImg.png"
+                                                            alt="majestic mountain">
+                                                    </div>
+                                                    <p class="m-0 p-0">Safari Expedition in Africa</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">Harrison Stein</p>
+                                                    <h6 class="tableText mt-1 p-0">692-767-2903</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">06 May 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">4:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">05 Oct 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">3:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <span class="bg-success-subtle px-2 py-1 mt-2 rounded-2">Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="mt-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-three-dots-vertical"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                                    </svg>
+
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="ms-2">
+                                                        <img src="./assets/Images/Booking_details_Images/canyonImg.png"
+                                                            alt="canyonImg">
+                                                    </div>
+                                                    <p class="m-0 p-0">Grand Canyon Explorer</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">Reece Chung</p>
+                                                    <h6 class="tableText mt-1 p-0">990-588-5716</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">04 Jan 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">10:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="m-0 p-0">03 Sep 2022</p>
+                                                    <h6 class="tableText mt-1 p-0">9:00 PM</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <span class="bg-success-subtle px-2 py-1 mt-2 rounded-2">Paid</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="mt-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-three-dots-vertical"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                                    </svg>
+
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+
+
+
+                            </div>
+
+                            <div class="d-flex justify-content-end gap-3 align-content-center pb-3 pe-2">
+                                <p class="p-0 m-0 fw-bold">View all</p>
+                                <div>
+                                    <img src="./assets/Images/Booking_details_Images/rightIcon.png" alt="right icon">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
