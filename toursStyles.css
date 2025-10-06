@@ -2,7 +2,9 @@
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 8px 0 rgba(160, 158, 158, 0.2), 0 6px 20px 0 rgba(102, 99, 99, 0.19);
 }
-
+.humburger{
+    background-color: #4ED2D5;
+}
 .totalIncomeCard {
     background-color: rgba(0, 56, 57, 1);
     color: rgba(144, 253, 255, 1);
