@@ -7,7 +7,7 @@ Bookify is dashboard which tracks the bookings and visualization made easier usi
 - CSS (For Media queries)
 
 ## Screenshots
-![App Screenshot](./public/AppScreenShots/SS1.png)
+![App Screenshot](./assets/Images/Bookify.png)
 ![App Screenshot](./public/AppScreenShots/SS2.png)
 
 
